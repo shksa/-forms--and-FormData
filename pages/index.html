@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FormData grokking</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Hello shithead</h1>
+    <form
+      method="GET"
+      enctype="multipart/form-data"
+      action="/api"
+      name="preferences"
+    >
+      <fieldset>
+        <legend>Car</legend>
+        <label>
+          Car
+          <select name="car">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="volkswagon">Volkswagon</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Shoe</legend>
+        <label>
+          Nike
+          <input type="checkbox" name="shoe" value="nike" />
+        </label>
+        <label>
+          Adidas
+          <input type="checkbox" name="shoe" value="adidas" />
+        </label>
+      </fieldset>
+      <input type="submit" />
+    </form>
+    <h3>Response from server:</h3>
+    <code></code>
+  </body>
+</html>
